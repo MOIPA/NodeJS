@@ -1,18 +1,10 @@
-var fps = 24;
+var fps = 10;
+var fs = require('fs');
 
 var frames=[];//每个成员都是一针
-frames[frames.length]=`
-  =     =
-     _
-`;
-frames[frames.length]=`
-  =     =
-     ^
-`;
-frames[frames.length]=`
-  =     =
-     v
-`;
+for(var i=1;i<7;i++){
+frames[frames.length] = fs.readFileSync(`./frames/${i}.txt`,'utf-8');
+}
 
 var current=0;
 var render = ()=>{
