@@ -22,9 +22,36 @@ console.time('main2');
 // },0);
 //**user another api 
 
-get('http://www.baidu.com',funciton(data){
-	console.log(data);
-});
-
+//1. if need call back the function must be put on the end
+// get('http://www.baidu.com',funciton(data){
+// 	console.log(data);
+// });
+//2. error first callback
+// function getFileAsync(path,callback){
+// 	if(error){
+// 		callback(new Error('xxx wrong'));
+// 	}else{
+// 		callback(null,data);
+// 	}
+// }
 
 console.timeEnd('main2');
+
+//example:
+function isEven(number,callback){
+	if(typeof number==='number'){
+		if(number%2){
+			callback(null,'it is even')
+		}else{
+			callback(null,'it is odd');
+		}
+	}else{
+		//throw new Error('not a number');
+		callback (new Error('not a number'));
+	}
+}
+
+isEven('asd',(error,data)=>{
+	if (error) throw error;
+	console.log(data);
+});
