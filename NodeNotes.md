@@ -6,7 +6,7 @@
 
 
 ### 语法
-#### 全局变量
+#### 全局变量 process
    1. 相当于chrome的window
       var a=10; global.a;
    2. process.stdout.write("");    往控制台输出
