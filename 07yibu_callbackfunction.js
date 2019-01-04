@@ -51,7 +51,11 @@ function isEven(number,callback){
 	}
 }
 
-isEven('asd',(error,data)=>{
+isEven(10,(error,data)=>{
+	if (error) throw error;
+	console.log(data);
+});
+isEven('asdf',(error,data)=>{
 	if (error) throw error;
 	console.log(data);
 });

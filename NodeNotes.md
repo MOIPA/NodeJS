@@ -1,5 +1,5 @@
 ### Node REPL环境
-> 相当于是chrome的控制太，使用的都是v8引擎
+> 相当于是chrome的控制太，使用的都是v8引擎  但是node平台有对操作系统的操作 
 >启动严格模式 node --use_strict
 >启动非严格模式 node
 >启动代码 node *.js
@@ -25,4 +25,4 @@
 #### 重复
    1. setInterval(function(){},1000);
 #### 异步编程
-   
+   1. 07 ... .js   
