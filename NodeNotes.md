@@ -12,6 +12,8 @@
    2. process.stdout.write("");    往控制台输出
    3. process.argv 传参数组
    4. process.stdin和stdout 和模板字符串
+   5. const a = 0; 常量定义
+   6. let i = 0; let区别与var，对于let定义的变量会在生命周期后销毁。多用于for循环，比var好！！
 #### debug
    1. node debug *.js
    2. help
