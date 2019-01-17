@@ -3,7 +3,7 @@ var fs = require('fs');
 
 var frames=[];//每个成员都是一针
 for(var i=1;i<7;i++){
-frames[frames.length] = fs.readFileSync(`./frames/${i}.txt`,'utf-8');
+frames[frames.length] = fs.readFileSync(`./Node/frames/${i}.txt`,'utf-8');
 }
 
 var current=0;

@@ -20,7 +20,7 @@ let result = eval(`${para1} ${op} ${para2}`);
 console.log('the eval result '+result);
 
 //use module
-const calc = require('./09moduleProgram/calc.js');
+const calc = require('../09moduleProgram/calc.js');
 switch(op){
 	case '+':console.log(calc.add(para1,para2));break;
 	case '-':console.log(calc.minus(para1,para2));break;
