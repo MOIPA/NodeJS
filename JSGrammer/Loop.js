@@ -12,4 +12,5 @@ for(let key in p1)
         console.log(key+"==>"+p1[key]);
     }
     
+
 for(let key in a1)console.log(key+"==>"+a1[key]);
