@@ -20,7 +20,7 @@ console.log(xiaomin.name);
 console.log(xiaomin.getAge());
 
 //2 创建原型的另一种 使用一个函数和Object.create()
-
+//然和object.create()实际还是指向__proto__
 function createStudent(name){
     let s = Object.create(Student);
     s.name = name;
