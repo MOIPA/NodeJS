@@ -14,3 +14,7 @@ console.log(`${string1} ${string2}`);
 console.log(string1.toUpperCase());
 console.log(string1.indexOf('llo'));
 console.log(string1.substring(1,3));
+
+//split
+let arr1 = 'a b c';
+let out =arr1.split(' ');

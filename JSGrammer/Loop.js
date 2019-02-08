@@ -12,5 +12,8 @@ for(let key in p1)
         console.log(key+"==>"+p1[key]);
     }
     
-
+//in 遍历出来的有属性
 for(let key in a1)console.log(key+"==>"+a1[key]);
+
+//of 遍历出来的是value
+for(let key of a1)console.log(key+"==>"+a1[key]);
