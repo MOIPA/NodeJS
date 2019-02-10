@@ -10,3 +10,7 @@ reg.test('010-12345'); //true
 //可以用正则切割字符串
 let res = 'a b c'.split(/\s+/);
 console.log(res);
+
+let reg3 = new RegExp('^[A\-Za\-z0\-9]{3,10}$');
+let result = reg3.test('as123456789');
+console.log(result);
